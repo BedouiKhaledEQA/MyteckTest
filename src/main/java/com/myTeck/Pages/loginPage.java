@@ -10,7 +10,7 @@ public class loginPage extends Base {
     public loginPage(){
         PageFactory.initElements(driver,this);
     }
-    @FindBy(xpath = "//*[contains(text(),'Connexion')]")
+    @FindBy(xpath = "//body[1]/div[2]/header[1]/div[1]/div[1]/ul[1]/li[1]/span[1]")
     WebElement connexionButton;
     @FindBy(xpath = "//input[@id='email']")
     WebElement email;
