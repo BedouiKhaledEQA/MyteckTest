@@ -10,7 +10,7 @@ public class loginPage extends Base {
     public loginPage(){
         PageFactory.initElements(driver,this);
     }
-    @FindBy(xpath = "//body[1]/div[2]/header[1]/div[1]/div[1]/ul[1]/li[1]/span[1]")
+    @FindBy(xpath = "//*[contains(text(),'Connexion')]")
     WebElement connexionButton;
     @FindBy(xpath = "//input[@id='email']")
     WebElement email;
@@ -22,7 +22,6 @@ public class loginPage extends Base {
     @FindBy(xpath = "//body[1]/div[2]/header[1]/div[1]/div[1]/ul[1]/li[1]/span[1]")
     WebElement loginCheckAssertion;
     public void loginAuth(String mail,String pass) throws InterruptedException {
-        Thread.sleep(5000);
         connexionButton.click();
         email.sendKeys(mail);
         password.sendKeys(pass);
