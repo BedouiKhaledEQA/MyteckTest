@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 
-run-name: ebooks UI Smoke Tests by @${{ github.actor }}
+run-name: UI Smoke Tests by @${{ github.actor }}
 
 
 
