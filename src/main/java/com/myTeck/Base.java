@@ -7,7 +7,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
