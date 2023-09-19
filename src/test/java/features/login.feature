@@ -1,5 +1,5 @@
 Feature: Login Functionality
-  @login @TNR
+  @TNR
   Scenario: login with valid email and password
 
     Given user open the browser
