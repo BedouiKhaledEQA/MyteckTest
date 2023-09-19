@@ -38,4 +38,4 @@ jobs:
       run: mvn clean
 
     - name: Run tests
-      run: mvn install
+      run: mvn test
