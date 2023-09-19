@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
+
 public class loginPage extends Base {
     public loginPage(){
         PageFactory.initElements(driver,this);
@@ -22,6 +24,7 @@ public class loginPage extends Base {
     @FindBy(xpath = "//body[1]/div[2]/header[1]/div[1]/div[1]/ul[1]/li[1]/span[1]")
     WebElement loginCheckAssertion;
     public void loginAuth(String mail,String pass) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         connexionButton.click();
         email.sendKeys(mail);
         password.sendKeys(pass);
