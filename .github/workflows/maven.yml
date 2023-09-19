@@ -9,25 +9,33 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  workflow_dispatch:
 
-jobs:
-  build:
 
-    runs-on: ubuntu-latest
+run-name: ebooks UI Smoke Tests by @${{ github.actor }}
+
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs: 
+
+  tests-run:
+    runs-on: windows-latest
+
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+ 
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
         java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
 
+    - name: Clean the project
+      run: mvn clean
 
+    - name: Run tests
+      run: mvn test
