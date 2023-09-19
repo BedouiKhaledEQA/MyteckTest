@@ -37,8 +37,8 @@ public class Base {
             }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(6));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+       // driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(6));
         driver.get(props.getProperty("url"));
 
 
