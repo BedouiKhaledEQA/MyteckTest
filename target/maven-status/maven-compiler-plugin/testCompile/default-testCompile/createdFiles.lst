@@ -1,0 +1,3 @@
+steps\Hooks.class
+steps\loginSteps.class
+runner\TestRunner.class
