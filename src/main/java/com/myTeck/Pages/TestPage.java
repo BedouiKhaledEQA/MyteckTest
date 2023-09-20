@@ -12,7 +12,7 @@ public class TestPage extends Base {
     }
     @FindBy(xpath = "//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/nav[1]/ul[1]/li[2]/a[1]")
     WebElement Button;
-    @FindBy(xpath = "//ul[@id='rw-menutop])'")
+    @FindBy(id = "rw-menutop")
     WebElement list;
 
     public void testperform() {
