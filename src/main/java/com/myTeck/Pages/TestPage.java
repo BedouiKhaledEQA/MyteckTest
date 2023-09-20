@@ -2,10 +2,8 @@ package com.myTeck.Pages;
 
 import com.myTeck.Base;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 public class TestPage extends Base {
     public TestPage(){
@@ -15,12 +13,7 @@ public class TestPage extends Base {
     WebElement Button;
 
     public void testperform() {
-        Actions actions =new Actions(driver);
-        actions.moveToElement(Button).perform();
         Button.click();
-
-
-
 
     }
 
