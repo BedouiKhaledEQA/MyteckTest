@@ -13,7 +13,7 @@ public class TestPage extends Base {
     WebElement Button;
 
     public void testperform() throws InterruptedException {
-        Thread.sleep(7000);
+        Thread.sleep(10000);
         Button.click();
 
     }
