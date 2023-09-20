@@ -9,7 +9,7 @@ public class TestPage extends Base {
     public TestPage(){
         PageFactory.initElements(driver,this);
     }
-    @FindBy(xpath = "//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/nav[1]/ul[1]/li[2]/a[1]")
+    @FindBy(linkText = "Connexion")
     WebElement Button;
 
 
