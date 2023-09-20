@@ -31,7 +31,7 @@ public class loginPage extends Base {
 
     public void loginAssertion() throws InterruptedException {
         Assert.assertTrue((loginCheckAssertion).isDisplayed());
-        Thread.sleep(5000);
+
 
     }
 
