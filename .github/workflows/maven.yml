@@ -20,7 +20,7 @@ run-name: UI Smoke Tests by @${{ github.actor }}
 jobs: 
 
   tests-run:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
 
     steps:
