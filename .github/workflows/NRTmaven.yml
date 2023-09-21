@@ -43,13 +43,13 @@ jobs:
 
         settings-path: ${{ github.workspace }} 
 
-    - name: Install Google Chrome 
 
-      run: |
-
-              chmod +x ./scripts/InstallChrome.sh
-
-                          ./scripts/InstallChrome.sh 
+    - name: Install Google Chrome
+  
+      run: 
+  
+         chmod +x ./scripts/InstallChrome.sh
+          ./scripts/InstallChrome.sh
 
  
 
