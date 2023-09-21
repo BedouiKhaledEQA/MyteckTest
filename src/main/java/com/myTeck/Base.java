@@ -3,7 +3,6 @@ package com.myTeck;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import java.io.File;
@@ -30,9 +29,7 @@ public class Base {
     public static void luncher(){
         if(props.getProperty("browser").equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
-            driver = new ChromeDriver(options);}
+        driver=new ChromeDriver();}
 
         else if(props.getProperty("browser").equalsIgnoreCase("Edge")){
             WebDriverManager.edgedriver().setup();
