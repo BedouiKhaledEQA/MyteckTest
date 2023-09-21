@@ -15,7 +15,7 @@ public class TestPage extends Base {
     public TestPage(){
         PageFactory.initElements(driver,this);
     }
-    @FindBy(xpath = "//body[1]/div[2]/header[1]/div[2]/div[3]/a[1]")
+    @FindBy(xpath = "//body[1]/div[1]/div[3]/form[1]/div[1]/div[1]/div[4]/center[1]/input[1]")
     WebElement Button;
 
     public void testperform()  {
