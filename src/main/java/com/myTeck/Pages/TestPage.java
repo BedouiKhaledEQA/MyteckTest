@@ -20,7 +20,7 @@ public class TestPage extends Base {
 
     public void testperform()  {
         driver.navigate().refresh();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.findElement(By.linkText("Connexion")).click();
         wait.until(d -> Button.isDisplayed());
         Button.click();
