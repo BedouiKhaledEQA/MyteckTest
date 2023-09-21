@@ -15,14 +15,10 @@ public class TestPage extends Base {
     public TestPage(){
         PageFactory.initElements(driver,this);
     }
-    @FindBy(linkText = "Connexion")
+    @FindBy(xpath = "//body[1]/div[2]/header[1]/div[2]/div[3]/a[1]")
     WebElement Button;
 
     public void testperform()  {
-        driver.navigate().refresh();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        driver.findElement(By.linkText("Connexion")).click();
-        wait.until(d -> Button.isDisplayed());
         Button.click();
 
     }

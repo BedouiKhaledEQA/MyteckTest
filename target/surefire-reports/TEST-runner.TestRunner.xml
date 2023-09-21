@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="runner.TestRunner" time="9.262" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="runner.TestRunner" time="12.418" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,7 +63,8 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Test" name="user open the browser" time="3.927"/>
-  <testcase classname="Test" name="User click on button" time="2.207"/>
-  <testcase classname="Test" name="Test" time="3.128"/>
+  <testcase classname="login with valid email and password" name="user open the browser" time="4.343"/>
+  <testcase classname="login with valid email and password" name="fill the email as &quot;testermob5@gmail.com&quot; and password as &quot;Test123&amp;&quot; and click on login button" time="7.238"/>
+  <testcase classname="login with valid email and password" name="user should navigate at the homepage" time="0.031"/>
+  <testcase classname="login with valid email and password" name="login with valid email and password" time="0.806"/>
 </testsuite>
