@@ -19,6 +19,7 @@ public class TestPage extends Base {
     WebElement Button;
 
     public void testperform()  {
+        driver.navigate().refresh();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         driver.findElement(By.linkText("Connexion")).click();
         wait.until(d -> Button.isDisplayed());
