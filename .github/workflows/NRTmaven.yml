@@ -5,7 +5,7 @@ on:
 
 jobs:
   tests-run:
-    runs-on: windows-latest
+    runs-on: ubunto-latest
 
     steps:
     - name: Checkout code
